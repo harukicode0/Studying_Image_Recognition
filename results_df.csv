@@ -1,0 +1,2 @@
+,date,name,archi,train_accuracy,val_accuracy,optimizer,n_epochs,batch_size,loss_fn,regularization
+0,2023/01/27/17:40,ore_no_zenketugou,NN,1.0,0.2,SDG,500,100,CrossEntropyLoss(),0
