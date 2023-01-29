@@ -37,11 +37,11 @@ class DropoutZenketugou(nn.Module):
     def __init__(self):
         super().__init__()
         self.fc1 = nn.Linear(3072,4096)
-        self.fc1_dropout = nn.Dropout(p=0.3)
+        self.fc1_dropout = nn.Dropout(p=0.05)
         self.fc2 = nn.Linear(4096,2048)
-        self.fc2_dropout = nn.Dropout(p=0.3)
+        self.fc2_dropout = nn.Dropout(p=0.05)
         self.fc3 = nn.Linear(2048,1024)
-        self.fc3_dropout = nn.Dropout(p=0.3)
+        self.fc3_dropout = nn.Dropout(p=0.05)
         self.fc4 = nn.Linear(1024,100)
     
     def forward(self, x):
@@ -61,8 +61,7 @@ class CNN(nn.Module):
         super().__init__()
         self.n_chans1 = n_chans1
         self.conv1 = nn.Conv2d(3, n_chans1, kernel_size=3, padding=1)
-        self.conv2 = nn.Conv2d(n_chans1, n_chans1 // 2, kernel_size=3,
-                               padding=1)
+        self.conv2 = nn.Conv2d(n_chans1, n_chans1 // 2, kernel_size=3,padding=1)
         self.fc1 = nn.Linear(8 * 8 * n_chans1 // 2, 32)
         self.fc2 = nn.Linear(32, 100)
         
