@@ -1,0 +1,12 @@
+,id,architecture,karnel_size,batch_normalization,dropout,activation_fn,data_augmentation,optimizer,loss_fn,params_num(M),train_acc,val_acc,n_epochs,done
+0,1,CNN,256,1,0.0,relu,拡大縮小、回転、反転、射影変換,SDG,CrossEntropyLoss,42.0,0.6421,0.4417,100,1.0
+1,2,CNN,128,1,0.0,relu,拡大縮小、回転、反転、射影変換,SDG,CrossEntropyLoss,25.0,0.727953,0.4371,100,1.0
+2,3,CNN,256,0,0.0,relu,拡大縮小、回転、反転、射影変換,SDG,CrossEntropyLoss,42.0,0.849992,0.3707,100,1.0
+3,4,CNN,256,1,0.05,relu,拡大縮小、回転、反転、射影変換,SDG,CrossEntropyLoss,42.0,0.61968,0.4382,100,1.0
+4,5,CNN,256,1,0.0,sigmoid,拡大縮小、回転、反転、射影変換,SDG,CrossEntropyLoss,42.0,0.0223,0.0228,100,1.0
+5,6,全結合,0,1,0.01,relu,拡大縮小、回転、反転、射影変換,SDG,CrossEntropyLoss,38.0,0.4691,0.3337,100,1.0
+6,7,CNN,256,1,0.0,relu,拡大縮小、回転、反転,SDG,CrossEntropyLoss,42.0,0.88126,0.4359,100,1.0
+7,8,CNN,256,1,0.0,relu,なし,SDG,CrossEntropyLoss,42.0,0.88126,0.4359,100,1.0
+8,9,CNN,256,1,0.0,relu,拡大縮小、回転、反転、射影変換,adam,CrossEntropyLoss,42.0,0.010003,0.010016,100,1.0
+9,10,resnet3,256,1,0.0,relu,拡大縮小、回転、反転、射影変換,momentumSGD,CrossEntropyLoss,10.0,0.665293,0.3477,50,1.0
+10,11,resnet34_転移学習,256,1,0.0,relu,拡大縮小、回転、反転、射影変換,momentumSGD,CrossEntropyLoss,21.0,0.68416,0.5955,10,1.0
